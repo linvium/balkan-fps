@@ -164,8 +164,9 @@ const scientific: { country: string; members: ScientificMember[] }[] = [
     country: "Chile",
     members: [
       {
-        name: "Juan Hirzel",
-        affiliation: "Instituto de Investigaciones Agropecuarias (INIA), Chile",
+        name: "Juan Pablo Zoffoli",
+        affiliation:
+          "Pontificia Universidad Católica de Chile, Faculty of Agronomy and Natural Systems",
       },
     ],
   },

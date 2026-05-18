@@ -20,6 +20,7 @@ import imgJasminka from "@/assets/speakers/jasminka-milivojevic.png";
 import imgMathewWhiting from "@/assets/speakers/mathew-whiting.png";
 import imgFlorinStanica from "@/assets/speakers/florin-stanica.png";
 import imgTomKon from "@/assets/speakers/tom-kon.png";
+import imgJuanPabloZoffoli from "@/assets/cherry-plus/juan-pablo-zoffoli.png";
 
 export const Route = createFileRoute("/program")({
   head: () => ({
@@ -169,7 +170,7 @@ type IntroSpeaker = {
   image?: string;
 };
 
-/** Order: Matthew, Juan, Jasminka, Florin, Tom */
+/** Order: Matthew, Juan Pablo, Jasminka, Florin, Tom */
 const introSpeakers: IntroSpeaker[] = [
   {
     name: "Matthew Whiting",
@@ -177,8 +178,10 @@ const introSpeakers: IntroSpeaker[] = [
     image: imgMathewWhiting,
   },
   {
-    name: "Juan Hirzel",
-    affiliation: "Instituto de Investigaciones Agropecuarias (INIA), Chile",
+    name: "Juan Pablo Zoffoli",
+    affiliation:
+      "Pontificia Universidad Católica de Chile, Faculty of Agronomy and Natural Systems",
+    image: imgJuanPabloZoffoli,
   },
   {
     name: "Jasminka Milivojević",
