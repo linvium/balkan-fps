@@ -27,7 +27,7 @@ import photoMilan from "@/assets/committees/milan-sipka.png";
 import photoRada from "@/assets/committees/rada-grbic.png";
 import photoMilana from "@/assets/committees/milana-kocic.png";
 import photoPetar from "@/assets/committees/petar-ninic.png";
-import photoMihajlo from "@/assets/committees/mihajlo-svitlica.png";
+import photoMihajlo from "@/assets/committees/mihajlo-svitlica.jpg";
 import photoJelisaveta from "@/assets/committees/jelisaveta-seka-cvijanovic.jpg";
 
 export const Route = createFileRoute("/organization")({
