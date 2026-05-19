@@ -34,7 +34,8 @@ export const Route = createFileRoute("/program")({
       { property: "og:title", content: "Programme — Balkan FPS 2027" },
       {
         property: "og:description",
-        content: "Agenda, speakers, and scientific session themes — VI Balkan Symposium on Fruit Production Systems.",
+        content:
+          "Agenda, speakers, and scientific session themes — VI Balkan Symposium on Fruit Production Systems.",
       },
     ],
   }),
@@ -56,7 +57,7 @@ const days: Day[] = [
       {
         time: "17:00 – 18:00",
         title: "Plenary lecture",
-        desc: "Greg Lang (Michigan State University)",
+        // desc: "Greg Lang (Michigan State University)",
       },
       {
         time: "18:30 – 21:00",
@@ -133,32 +134,28 @@ const dayPickerStyles = [
   {
     active:
       "border-sky-600 bg-sky-600 text-white shadow-md shadow-sky-900/15 ring-2 ring-sky-400/40 ring-offset-2 ring-offset-background",
-    idle:
-      "border-sky-400/45 bg-sky-500/[0.12] text-foreground hover:border-sky-500/55 hover:bg-sky-500/[0.18]",
+    idle: "border-sky-400/45 bg-sky-500/[0.12] text-foreground hover:border-sky-500/55 hover:bg-sky-500/[0.18]",
     dateActive: "text-sky-100",
     dateIdle: "text-sky-900/70 dark:text-sky-200/80",
   },
   {
     active:
       "border-violet-600 bg-violet-600 text-white shadow-md shadow-violet-900/15 ring-2 ring-violet-400/35 ring-offset-2 ring-offset-background",
-    idle:
-      "border-violet-400/45 bg-violet-500/[0.12] text-foreground hover:border-violet-500/55 hover:bg-violet-500/[0.18]",
+    idle: "border-violet-400/45 bg-violet-500/[0.12] text-foreground hover:border-violet-500/55 hover:bg-violet-500/[0.18]",
     dateActive: "text-violet-100",
     dateIdle: "text-violet-900/70 dark:text-violet-200/80",
   },
   {
     active:
       "border-amber-600 bg-amber-600 text-white shadow-md shadow-amber-900/15 ring-2 ring-amber-400/40 ring-offset-2 ring-offset-background",
-    idle:
-      "border-amber-400/50 bg-amber-500/[0.14] text-foreground hover:border-amber-500/60 hover:bg-amber-500/[0.2]",
+    idle: "border-amber-400/50 bg-amber-500/[0.14] text-foreground hover:border-amber-500/60 hover:bg-amber-500/[0.2]",
     dateActive: "text-amber-100",
     dateIdle: "text-amber-950/75 dark:text-amber-100/85",
   },
   {
     active:
       "border-emerald-600 bg-emerald-600 text-white shadow-md shadow-emerald-900/15 ring-2 ring-emerald-400/35 ring-offset-2 ring-offset-background",
-    idle:
-      "border-emerald-500/45 bg-emerald-500/[0.12] text-foreground hover:border-emerald-500/55 hover:bg-emerald-500/[0.18]",
+    idle: "border-emerald-500/45 bg-emerald-500/[0.12] text-foreground hover:border-emerald-500/55 hover:bg-emerald-500/[0.18]",
     dateActive: "text-emerald-100",
     dateIdle: "text-emerald-950/75 dark:text-emerald-100/85",
   },
@@ -222,8 +219,7 @@ const sessions = [
     n: "01",
     icon: Sprout,
     title: "Genetic resources, breeding and biotechnology",
-    body:
-      "This session welcomes contributions on fruit genetic resources, breeding strategies, and the application of advanced biotechnological and molecular tools in fruit science. Special emphasis is placed on the characterization, conservation, and utilization of germplasm, as well as the development of climate-resilient cultivars through modern genomic tools, phenotyping platforms, and innovative breeding approaches.",
+    body: "This session welcomes contributions on fruit genetic resources, breeding strategies, and the application of advanced biotechnological and molecular tools in fruit science. Special emphasis is placed on the characterization, conservation, and utilization of germplasm, as well as the development of climate-resilient cultivars through modern genomic tools, phenotyping platforms, and innovative breeding approaches.",
     keywords:
       "germplasm, breeding, genetic diversity, molecular markers, genomics, phenotyping, biotechnology, climate resilience",
     stripeClass: "bg-gradient-to-b from-emerald-600 via-emerald-500/70 to-emerald-400/30",
@@ -234,8 +230,7 @@ const sessions = [
     n: "02",
     icon: Activity,
     title: "Fruit physiology and production systems",
-    body:
-      "This session focuses on plant physiological processes and their interaction with training systems, canopy architecture, and productivity in modern fruit growing. Contributions addressing innovative production approaches, precision horticulture, sensor-based monitoring, digital technologies, and strategies for improving resource-use efficiency and adaptation to climate change are particularly encouraged.",
+    body: "This session focuses on plant physiological processes and their interaction with training systems, canopy architecture, and productivity in modern fruit growing. Contributions addressing innovative production approaches, precision horticulture, sensor-based monitoring, digital technologies, and strategies for improving resource-use efficiency and adaptation to climate change are particularly encouraged.",
     keywords:
       "physiology, light interception, canopy architecture, training systems, productivity, precision horticulture, sensors, digital tools, resource efficiency, climate adaptation",
     stripeClass: "bg-gradient-to-b from-sky-600 via-sky-500/70 to-sky-400/30",
@@ -246,8 +241,7 @@ const sessions = [
     n: "03",
     icon: Tractor,
     title: "Orchard management and sustainable practices",
-    body:
-      "This session covers modern orchard management practices, including pruning, nutrition, irrigation, crop load regulation, and integrated plant protection, with emphasis on sustainable and technology-driven solutions. Particular attention is given to integrated pest management (IPM), biological control, reduced pesticide use, resistance management, and environmentally friendly approaches. Topics may also include mechanization, digital agriculture, decision support systems, and integrated management strategies aimed at improving efficiency, reducing inputs, and enhancing overall orchard performance.",
+    body: "This session covers modern orchard management practices, including pruning, nutrition, irrigation, crop load regulation, and integrated plant protection, with emphasis on sustainable and technology-driven solutions. Particular attention is given to integrated pest management (IPM), biological control, reduced pesticide use, resistance management, and environmentally friendly approaches. Topics may also include mechanization, digital agriculture, decision support systems, and integrated management strategies aimed at improving efficiency, reducing inputs, and enhancing overall orchard performance.",
     keywords:
       "pruning, nutrition, irrigation, crop load, plant protection, pest and disease management, IPM, biological control, reduced pesticides, resistance management, orchard systems, mechanization, digital agriculture, decision support systems, sustainable practices",
     stripeClass: "bg-gradient-to-b from-amber-600 via-amber-500/70 to-amber-400/30",
@@ -258,8 +252,7 @@ const sessions = [
     n: "04",
     icon: Apple,
     title: "Fruit quality, postharvest and innovation",
-    body:
-      "This session includes research on fruit quality, postharvest handling and storage, and processing, as well as the evaluation of nutritional and functional properties. In addition, contributions addressing economic aspects, value chains, market-oriented production, and innovative technologies in fruit production and commercialization are encouraged, including digitalization and new business models in the fruit sector.",
+    body: "This session includes research on fruit quality, postharvest handling and storage, and processing, as well as the evaluation of nutritional and functional properties. In addition, contributions addressing economic aspects, value chains, market-oriented production, and innovative technologies in fruit production and commercialization are encouraged, including digitalization and new business models in the fruit sector.",
     keywords:
       "fruit quality, postharvest, storage, processing, bioactive compounds, food science, economics, value chain, digital agriculture, innovation",
     stripeClass: "bg-gradient-to-b from-rose-600 via-rose-500/70 to-rose-400/30",
@@ -304,7 +297,7 @@ function ProgramPage() {
     <>
       <PageHero
         backgroundImage={heroBg}
-        eyebrow="IV Programme"
+        eyebrow=""
         title="Programme & scientific sessions"
         description="Symposium agenda, invited lecturers, and four thematic sessions for contributed papers — connecting research with practice in Banja Luka."
       />
@@ -342,8 +335,12 @@ function ProgramPage() {
                     <Mic className="h-3.5 w-3.5" aria-hidden />
                     Plenary lecture
                   </span>
-                  <h3 className="mt-4 font-display text-xl text-foreground md:text-2xl">Greg Lang</h3>
-                  <p className="mt-2 text-base text-muted-foreground">Michigan State University, USA</p>
+                  <h3 className="mt-4 font-display text-xl text-foreground md:text-2xl">
+                    Greg Lang
+                  </h3>
+                  <p className="mt-2 text-base text-muted-foreground">
+                    Michigan State University, USA
+                  </p>
                 </div>
               </div>
             </motion.article>
@@ -379,7 +376,9 @@ function ProgramPage() {
                   </div>
                   <div className="flex flex-1 flex-col p-5">
                     <h3 className="font-display text-lg leading-snug text-foreground">{k.name}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{k.affiliation}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {k.affiliation}
+                    </p>
                   </div>
                 </motion.article>
               ))}
@@ -432,7 +431,9 @@ function ProgramPage() {
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <MapPin className="h-4 w-4 text-primary" /> {day.venue}
                 </div>
-                <h2 className="mt-2 font-display text-2xl text-foreground md:text-3xl">{day.label}</h2>
+                <h2 className="mt-2 font-display text-2xl text-foreground md:text-3xl">
+                  {day.label}
+                </h2>
 
                 <ol className="mt-10 space-y-4">
                   {day.slots.map((s) => (
@@ -449,7 +450,9 @@ function ProgramPage() {
                       <div>
                         <h3 className="font-display text-xl text-foreground">{s.title}</h3>
                         {s.desc && (
-                          <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
+                          <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                            {s.desc}
+                          </p>
                         )}
                       </div>
                     </li>
@@ -466,13 +469,18 @@ function ProgramPage() {
         className="scroll-mt-28 border-t border-border/60 bg-secondary/25 py-16 md:py-24"
       >
         <div className="mx-auto max-w-6xl px-5 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">BFGS 2027</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+            BFGS 2027
+          </p>
           <h2 className="mt-2 font-display text-2xl text-foreground md:text-3xl">
             Scientific sessions
           </h2>
           <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">
             Scope and topics for each thematic session. Invited lecturers are listed under{" "}
-            <a href="#agenda" className="font-medium text-primary underline-offset-4 hover:underline">
+            <a
+              href="#agenda"
+              className="font-medium text-primary underline-offset-4 hover:underline"
+            >
               Agenda
             </a>
             .
@@ -513,10 +521,10 @@ function ProgramPage() {
                   <h3 className="relative z-10 mt-7 font-display text-xl leading-snug text-foreground md:text-2xl">
                     {s.title}
                   </h3>
-                  <p className="relative z-10 mt-5 text-base leading-relaxed text-muted-foreground">
+                  <p className="relative z-10 mt-5 text-justify text-base leading-relaxed text-muted-foreground">
                     {s.body}
                   </p>
-                  <p className="relative z-10 mt-6 text-sm leading-relaxed text-muted-foreground/95">
+                  <p className="relative z-10 mt-6 text-justify text-sm leading-relaxed text-muted-foreground/95">
                     <span className="font-semibold text-foreground/80">Keywords: </span>
                     {s.keywords}
                   </p>

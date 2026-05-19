@@ -150,7 +150,10 @@ const categoryLabel: Record<MilestoneCategory, string> = {
   event: "Symposium programme",
 };
 
-const categoryCardStyle: Record<MilestoneCategory, { shell: string; stripe: string; icon: string }> = {
+const categoryCardStyle: Record<
+  MilestoneCategory,
+  { shell: string; stripe: string; icon: string }
+> = {
   papers: {
     shell:
       "border-primary/40 bg-gradient-to-br from-primary/[0.12] via-card to-card shadow-md shadow-primary/5 ring-1 ring-primary/10",
@@ -250,7 +253,15 @@ function DatesSubnav() {
   );
 }
 
-function YearBanner({ year, subtitle, gradientClass }: { year: 2026 | 2027; subtitle: string; gradientClass: string }) {
+function YearBanner({
+  year,
+  subtitle,
+  gradientClass,
+}: {
+  year: 2026 | 2027;
+  subtitle: string;
+  gradientClass: string;
+}) {
   return (
     <div
       className={cn(
@@ -261,11 +272,15 @@ function YearBanner({ year, subtitle, gradientClass }: { year: 2026 | 2027; subt
       <div className="pointer-events-none absolute -right-8 -top-12 font-display text-[10rem] font-bold leading-none text-white/10 md:text-[12rem]">
         {year}
       </div>
-      <p className="relative text-xs font-semibold uppercase tracking-[0.28em] text-white/85">Milestones</p>
+      <p className="relative text-xs font-semibold uppercase tracking-[0.28em] text-white/85">
+        Milestones
+      </p>
       <h2 className="relative mt-2 font-display text-2xl font-semibold tracking-tight text-white md:text-3xl">
         {year}
       </h2>
-      <p className="relative mt-3 max-w-xl text-sm font-medium text-white/90 md:text-base">{subtitle}</p>
+      <p className="relative mt-3 max-w-xl text-sm font-medium text-white/90 md:text-base">
+        {subtitle}
+      </p>
     </div>
   );
 }
@@ -293,10 +308,7 @@ function MilestoneCard({ m, index }: { m: Milestone; index: number }) {
       />
       <div className="relative flex items-start gap-4 pl-4">
         <div
-          className={cn(
-            "flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl",
-            st.icon,
-          )}
+          className={cn("flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl", st.icon)}
         >
           <Icon className="h-6 w-6" aria-hidden />
         </div>
@@ -321,7 +333,7 @@ function DatesPage() {
     <>
       <PageHero
         backgroundImage={heroBg}
-        eyebrow="Timeline"
+        eyebrow=""
         title="Important Dates"
         description="Every deadline and programme moment in one place — grouped by year so nothing gets lost."
       />
@@ -339,7 +351,11 @@ function DatesPage() {
           className="pointer-events-none absolute -right-8 bottom-10 z-0 hidden w-[min(55vw,22rem)] select-none opacity-[0.045] grayscale contrast-110 sm:block"
           aria-hidden
         >
-          <img src={logoWatermark} alt="" className="w-full object-contain object-right dark:opacity-[0.07]" />
+          <img
+            src={logoWatermark}
+            alt=""
+            className="w-full object-contain object-right dark:opacity-[0.07]"
+          />
         </div>
 
         <div className="relative z-[1] mx-auto max-w-6xl space-y-16 px-5 lg:space-y-20 lg:px-8">
@@ -351,8 +367,8 @@ function DatesPage() {
               Three tracks to follow
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-muted-foreground md:text-base">
-              Each card is colour-coded. Jump to a year below, or scan for abstracts, registration, or
-              on-site programme dates.
+              Each card is colour-coded. Jump to a year below, or scan for abstracts, registration,
+              or on-site programme dates.
             </p>
             <div className="mt-10 grid gap-4 md:grid-cols-3 md:gap-5">
               {legendItems.map(({ key, label, desc, Icon, pillClass }) => (

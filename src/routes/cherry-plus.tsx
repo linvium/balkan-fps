@@ -5,7 +5,7 @@ import { Cherry } from "lucide-react";
 import photoGregoryLang from "@/assets/speakers/greg-lang.png";
 import photoMatthewWhiting from "@/assets/speakers/mathew-whiting.png";
 import photoJuanPablo from "@/assets/cherry-plus/juan-pablo-zoffoli.png";
-import photoLorenzo from "@/assets/cherry-plus/lorenzo-bergonzoni.png";
+import photoLorenzo from "@/assets/cherry-plus/lorenzo-bergonzoni.jpg";
 import photoGiacomo from "@/assets/cherry-plus/giacomo-gatti.png";
 import imgMorningTalks from "@/assets/cherry-plus/programme-morning-talks.png";
 import imgFieldTrellis from "@/assets/cherry-plus/programme-field-trellis.png";
@@ -53,10 +53,7 @@ const experts: Expert[] = [
   },
   {
     name: "Juan Pablo Zoffoli",
-    lines: [
-      "Pontificia Universidad Católica de Chile",
-      "Faculty of Agronomy and Natural Systems",
-    ],
+    lines: ["Pontificia Universidad Católica de Chile", "Faculty of Agronomy and Natural Systems"],
     photo: photoJuanPablo,
   },
   {
@@ -71,7 +68,8 @@ const experts: Expert[] = [
   },
 ];
 
-const experienceIntroClass = "text-base leading-relaxed text-muted-foreground md:text-lg md:leading-relaxed";
+const experienceIntroClass =
+  "text-base leading-relaxed text-muted-foreground md:text-lg md:leading-relaxed";
 
 const programmeBlocks = [
   {
@@ -82,8 +80,7 @@ const programmeBlocks = [
     stripe: "from-primary via-primary/60 to-teal-500",
     shell:
       "border-primary/35 bg-gradient-to-br from-primary/[0.08] via-card to-card ring-1 ring-primary/10",
-    body:
-      "Start the day with inspiring, practice-oriented talks from leading international experts, focusing on modern sweet cherry production — from choosing the right training system to optimizing key orchard practices for consistent, high-quality yields. Throughout the sessions, special emphasis will be placed on interactive exchange with growers, encouraging discussion and knowledge transfer aimed at improving production practices.",
+    body: "Start the day with inspiring, practice-oriented talks from leading international experts, focusing on modern sweet cherry production — from choosing the right training system to optimizing key orchard practices for consistent, high-quality yields. Throughout the sessions, special emphasis will be placed on interactive exchange with growers, encouraging discussion and knowledge transfer aimed at improving production practices.",
     figures: [
       {
         src: imgMorningTalks,
@@ -99,16 +96,15 @@ const programmeBlocks = [
     stripe: "from-emerald-500 via-emerald-600 to-lime-500",
     shell:
       "border-emerald-600/30 bg-gradient-to-br from-emerald-500/[0.1] via-card to-card ring-1 ring-emerald-600/12 dark:from-emerald-950/28",
-    body:
-      "Step directly into production: explore a cutting-edge substrate-grown cherry system and a commercial orchard spanning 4 hectares with more than 15 cultivars — a unique opportunity to compare systems, varieties, and real-world performance, with continuous dialogue between experts and farmers in real orchard conditions.",
+    body: "Step directly into production: explore a cutting-edge substrate-grown cherry system and a commercial orchard spanning 4 hectares with more than 15 cultivars — a unique opportunity to compare systems, varieties, and real-world performance, with continuous dialogue between experts and farmers in real orchard conditions.",
     figures: [
-      {
-        src: imgFieldTrellis,
-        alt: "Young cherry trees in substrate containers in outdoor rows with drip irrigation",
-      },
       {
         src: imgFieldOrchard,
         alt: "Cherry saplings in black pots with irrigation lines and support wires in the field",
+      },
+      {
+        src: imgFieldTrellis,
+        alt: "Young cherry trees in substrate containers in outdoor rows with drip irrigation",
       },
     ],
   },
@@ -120,8 +116,7 @@ const programmeBlocks = [
     stripe: "from-violet-500 via-indigo-600 to-sky-600",
     shell:
       "border-violet-500/35 bg-gradient-to-br from-violet-500/[0.1] via-card to-card ring-1 ring-violet-500/12 dark:from-violet-950/28",
-    body:
-      "Finish the day where science truly meets practice — with live demonstrations of summer pruning in different training systems (Spindle, UFO, KGB), providing hands-on insights through direct interaction with experts and growers.",
+    body: "Finish the day where science truly meets practice — with live demonstrations of summer pruning in different training systems (Spindle, UFO, KGB), providing hands-on insights through direct interaction with experts and growers.",
     figures: [
       {
         src: imgEec1,
@@ -159,11 +154,11 @@ function CherryPlusPage() {
             Intensive, practice-oriented day
           </h2>
           <p className={cn("mt-6 text-justify", experienceIntroClass)}>
-            An intensive, practice-oriented day where science meets real orchard conditions, combining
-            expert insights, field visits, and live demonstrations of modern sweet cherry production
-            systems. Throughout the programme, continuous interaction with growers ensures open
-            discussion and practical knowledge exchange aimed at improving production decisions and
-            outcomes.
+            An intensive, practice-oriented day where science meets real orchard conditions,
+            combining expert insights, field visits, and live demonstrations of modern sweet cherry
+            production systems. Throughout the programme, continuous interaction with growers
+            ensures open discussion and practical knowledge exchange aimed at improving production
+            decisions and outcomes.
           </p>
         </div>
       </section>
@@ -172,7 +167,8 @@ function CherryPlusPage() {
         <div className="mx-auto max-w-6xl px-5 lg:px-8">
           <h2 className="font-display text-2xl text-foreground md:text-3xl">Invited experts</h2>
           <p className="mt-2 max-w-2xl text-sm text-muted-foreground md:text-base">
-            Speakers from leading institutions — practice-oriented insights for growers and advisers.
+            Speakers from leading institutions — practice-oriented insights for growers and
+            advisers.
           </p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {experts.map((expert) => (
@@ -193,7 +189,10 @@ function CherryPlusPage() {
                     {expert.name}
                   </p>
                   {expert.lines.map((line) => (
-                    <p key={line} className="mt-1 text-sm leading-snug text-muted-foreground md:text-[15px]">
+                    <p
+                      key={line}
+                      className="mt-1 text-sm leading-snug text-muted-foreground md:text-[15px]"
+                    >
                       {line}
                     </p>
                   ))}

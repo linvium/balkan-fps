@@ -191,7 +191,7 @@ function RegistrationPage() {
     <>
       <PageHero
         backgroundImage={heroBg}
-        eyebrow="VI Registration"
+        eyebrow=""
         title="Registration and fees"
         description="Early registration: 1 March 2027. All fees are shown in EUR."
       />
@@ -219,10 +219,17 @@ function RegistrationPage() {
                     )}
                     aria-hidden
                   />
-                  <h3 className={cn("relative font-display text-2xl font-semibold tracking-tight", v.title)}>
+                  <h3
+                    className={cn(
+                      "relative font-display text-2xl font-semibold tracking-tight",
+                      v.title,
+                    )}
+                  >
                     {t.name}
                   </h3>
-                  <p className="relative mt-2 text-sm leading-relaxed text-muted-foreground">{t.desc}</p>
+                  <p className="relative mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {t.desc}
+                  </p>
 
                   <div className="relative mt-6 space-y-3 text-sm">
                     {t.flat ? (
@@ -235,7 +242,11 @@ function RegistrationPage() {
                           big
                           priceClassName={v.price}
                         />
-                        <Row label="Late (from 1 Jan 2027)" value={t.late} priceClassName={v.price} />
+                        <Row
+                          label="Late (from 1 Jan 2027)"
+                          value={t.late}
+                          priceClassName={v.price}
+                        />
                         <Row label="On-site" value={t.onsite} priceClassName={v.price} />
                       </>
                     )}
@@ -295,8 +306,8 @@ function RegistrationPage() {
                   </p>
                   <ul className="mt-3 space-y-2 text-sm text-foreground/85">
                     <li className="flex items-start gap-2">
-                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden /> Traditional
-                      breakfast
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden />{" "}
+                      Traditional breakfast
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden /> Guided
@@ -336,8 +347,8 @@ function RegistrationPage() {
                       Kozara National Park and the memorial complex at Mrakovica Memorial Monument
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden /> Traditional
-                      lunch at an ethno restaurant
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden />{" "}
+                      Traditional lunch at an ethno restaurant
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden /> Visits to
@@ -381,7 +392,15 @@ function Row({
   );
 }
 
-function IncludeCard({ title, subtitle, items }: { title: string; subtitle: string; items: string[] }) {
+function IncludeCard({
+  title,
+  subtitle,
+  items,
+}: {
+  title: string;
+  subtitle: string;
+  items: string[];
+}) {
   return (
     <div className="rounded-3xl border border-border bg-card p-8 shadow-soft">
       <h3 className="font-display text-2xl text-foreground">{title}</h3>

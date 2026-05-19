@@ -21,8 +21,7 @@ export const Route = createFileRoute("/sponsors")({
       },
       {
         property: "og:description",
-        content:
-          "Become a partner: sponsorship packages, benefits, and comparison overview.",
+        content: "Become a partner: sponsorship packages, benefits, and comparison overview.",
       },
     ],
   }),
@@ -252,7 +251,7 @@ function SponsorsPage() {
     <>
       <PageHero
         backgroundImage={heroBg}
-        eyebrow="VI Sponsors"
+        eyebrow=""
         title="Become a partner of the VI Balkan Symposium on Fruit Production Systems."
         description="Showcase your brand, connect with experts, and shape the future of fruit production."
       />
@@ -364,32 +363,30 @@ function SponsorsPage() {
                   {comparisonRows.map((row, ri) => {
                     const stripe = ri % 2 === 0 ? "bg-background" : "bg-secondary/25";
                     return (
-                    <tr key={row.feature} className={stripe}>
-                      <th
-                        scope="row"
-                        className={cn(
-                          "sticky left-0 z-10 px-4 py-3 pr-6 font-normal text-foreground backdrop-blur-sm",
-                          stripe,
-                        )}
-                      >
-                        {row.feature}
-                      </th>
-                      <td className="px-3 py-3 text-center text-muted-foreground">
-                        {row.diamond}
-                      </td>
-                      <td className="px-3 py-3 text-center text-muted-foreground">
-                        {row.gold}
-                      </td>
-                      <td className="px-3 py-3 text-center text-muted-foreground">
-                        {row.silver}
-                      </td>
-                      <td className="px-3 py-3 text-center text-muted-foreground">
-                        {row.bronze}
-                      </td>
-                      <td className="px-3 py-3 text-center text-muted-foreground">
-                        {row.supporter}
-                      </td>
-                    </tr>
+                      <tr key={row.feature} className={stripe}>
+                        <th
+                          scope="row"
+                          className={cn(
+                            "sticky left-0 z-10 px-4 py-3 pr-6 font-normal text-foreground backdrop-blur-sm",
+                            stripe,
+                          )}
+                        >
+                          {row.feature}
+                        </th>
+                        <td className="px-3 py-3 text-center text-muted-foreground">
+                          {row.diamond}
+                        </td>
+                        <td className="px-3 py-3 text-center text-muted-foreground">{row.gold}</td>
+                        <td className="px-3 py-3 text-center text-muted-foreground">
+                          {row.silver}
+                        </td>
+                        <td className="px-3 py-3 text-center text-muted-foreground">
+                          {row.bronze}
+                        </td>
+                        <td className="px-3 py-3 text-center text-muted-foreground">
+                          {row.supporter}
+                        </td>
+                      </tr>
                     );
                   })}
                 </tbody>

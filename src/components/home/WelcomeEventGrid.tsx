@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import imgCherries from "@/assets/welcome-grid-cherries.png";
-import imgHarvest from "@/assets/welcome-grid-harvest.png";
+import imgCherries from "@/assets/welcome-grid-cherries.jpg";
+import imgHarvest from "@/assets/welcome-grid-harvest.jpg";
 import imgFieldDay from "@/assets/welcome-grid-field-day.png";
 import imgLandscape from "@/assets/welcome-grid-landscape.png";
 
@@ -14,19 +14,19 @@ const tiles = [
   },
   {
     key: "sessions",
-    image: imgHarvest,
+    image: imgFieldDay,
     alt: "Wooden crates of fresh plums between orchard rows",
     line: "Four scientific sessions",
   },
   {
     key: "networking",
-    image: imgFieldDay,
+    image: imgLandscape,
     alt: "Symposium participants on a technical visit in an orchard",
     line: "Networking",
   },
   {
     key: "tours",
-    image: imgLandscape,
+    image: imgHarvest,
     alt: "Aerial view of orchards and hills in the countryside",
     line: "Technical tours across Republika Srpska",
   },

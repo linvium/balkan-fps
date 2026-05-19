@@ -1,14 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import {
-  Car,
-  Globe,
-  Info,
-  MapPin,
-  MapPinned,
-  Microscope,
-  Plane,
-  Users,
-} from "lucide-react";
+import { Car, Globe, Info, MapPin, MapPinned, Microscope, Plane, Users } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { PageHero } from "@/components/layout/PageHero";
 import heroBg from "@/assets/page-heroes/organization-bg.png";
@@ -39,7 +30,10 @@ export const Route = createFileRoute("/organization")({
         content:
           "Travel information, venues in Banja Luka, organising and scientific committees — VI Balkan Symposium on Fruit Production Systems 2027.",
       },
-      { property: "og:title", content: "Organization — VI Balkan Symposium on Fruit Production Systems" },
+      {
+        property: "og:title",
+        content: "Organization — VI Balkan Symposium on Fruit Production Systems",
+      },
       {
         property: "og:description",
         content:
@@ -117,8 +111,7 @@ const scientific: { country: string; members: ScientificMember[] }[] = [
     members: [
       {
         name: "Alessio Scalisi",
-        affiliation:
-          "Tatura SmartFarm, Agriculture Science and Technology, Agriculture Victoria",
+        affiliation: "Tatura SmartFarm, Agriculture Science and Technology, Agriculture Victoria",
       },
     ],
   },
@@ -215,8 +208,7 @@ const scientific: { country: string; members: ScientificMember[] }[] = [
     members: [
       {
         name: "Jose Quero Garcia",
-        affiliation:
-          "French National Research Institute for Agriculture, Food and Environment",
+        affiliation: "French National Research Institute for Agriculture, Food and Environment",
       },
     ],
   },
@@ -337,7 +329,10 @@ const scientific: { country: string; members: ScientificMember[] }[] = [
   {
     country: "Serbia",
     members: [
-      { name: "Milica Fotirić Akšić", affiliation: "University of Belgrade Faculty of Agriculture" },
+      {
+        name: "Milica Fotirić Akšić",
+        affiliation: "University of Belgrade Faculty of Agriculture",
+      },
       {
         name: "Jasminka Milivojević",
         affiliation: "University of Belgrade Faculty of Agriculture",
@@ -371,13 +366,11 @@ const scientific: { country: string; members: ScientificMember[] }[] = [
     members: [
       {
         name: "Metka Hudina",
-        affiliation:
-          "University of Ljubljana, Biotechnical Faculty, Department of Agronomy",
+        affiliation: "University of Ljubljana, Biotechnical Faculty, Department of Agronomy",
       },
       {
         name: "Veberič Robert",
-        affiliation:
-          "University of Ljubljana, Biotechnical Faculty, Department of Agronomy",
+        affiliation: "University of Ljubljana, Biotechnical Faculty, Department of Agronomy",
       },
     ],
   },
@@ -456,7 +449,9 @@ function TravelInformationSection() {
             Travel information
           </p>
         </div>
-        <h2 className="mt-3 font-display text-2xl text-foreground md:text-3xl">Getting to Banja Luka</h2>
+        <h2 className="mt-3 font-display text-2xl text-foreground md:text-3xl">
+          Getting to Banja Luka
+        </h2>
 
         <div className="mt-10 space-y-12 text-sm leading-relaxed text-foreground/90">
           <div>
@@ -465,9 +460,10 @@ function TravelInformationSection() {
               Visa &amp; entry information
             </h3>
             <p className="mt-4 text-muted-foreground">
-              Bosnia and Herzegovina has a relatively open visa regime. Citizens of many countries can
-              enter visa-free for short stays (up to 90 days within a 180-day period), including most
-              EU countries, the United Kingdom, the United States, Canada, Australia, and others.
+              Bosnia and Herzegovina has a relatively open visa regime. Citizens of many countries
+              can enter visa-free for short stays (up to 90 days within a 180-day period), including
+              most EU countries, the United Kingdom, the United States, Canada, Australia, and
+              others.
             </p>
             <p className="mt-3 text-muted-foreground">
               Participants who require a visa are advised to apply well in advance through the
@@ -514,10 +510,13 @@ function TravelInformationSection() {
               By air
             </h4>
             <p className="mt-2 text-muted-foreground">
-              The nearest airport is <span className="text-foreground">Banja Luka International Airport</span>{" "}
-              (approx. 25 km from the city centre).
+              The nearest airport is{" "}
+              <span className="text-foreground">Banja Luka International Airport</span> (approx. 25
+              km from the city centre).
             </p>
-            <p className="mt-3 text-muted-foreground">Alternative airports within a few hours&apos; drive:</p>
+            <p className="mt-3 text-muted-foreground">
+              Alternative airports within a few hours&apos; drive:
+            </p>
             <ul className="mt-2 list-inside list-disc space-y-1 text-muted-foreground">
               <li>Zagreb Airport (Croatia, ~2 hours)</li>
               <li>Sarajevo International Airport (~3–3.5 hours)</li>
@@ -541,8 +540,8 @@ function TravelInformationSection() {
               <li>Sarajevo → ~3 hours</li>
             </ul>
             <p className="mt-3 text-muted-foreground">
-              Road infrastructure is good, and border crossings are generally straightforward, though
-              waiting times may vary.
+              Road infrastructure is good, and border crossings are generally straightforward,
+              though waiting times may vary.
             </p>
           </div>
 
@@ -550,8 +549,8 @@ function TravelInformationSection() {
             <h3 className="font-display text-xl text-foreground">Practical tips</h3>
             <ul className="mt-4 list-inside list-disc space-y-2 text-muted-foreground">
               <li>
-                A valid passport is required for entry (ID card is sufficient for some EU and regional
-                countries).
+                A valid passport is required for entry (ID card is sufficient for some EU and
+                regional countries).
               </li>
               <li>
                 Local currency: <span className="text-foreground">Convertible Mark (BAM)</span>.
@@ -588,7 +587,10 @@ function VenueSection() {
           Opening sessions, plenary lectures, and scientific sessions (Days 1–3) take place at
           University of Banja Luka campus facilities. Field activities use the Experimental and
           Educational Centre (EEC) and off-campus sites as listed below. See the{" "}
-          <Link to="/program" className="font-medium text-primary underline-offset-4 hover:underline">
+          <Link
+            to="/program"
+            className="font-medium text-primary underline-offset-4 hover:underline"
+          >
             full programme
           </Link>{" "}
           for daily timings.
@@ -653,7 +655,7 @@ function OrganizationPage() {
     <>
       <PageHero
         backgroundImage={heroBg}
-        eyebrow="VI Organization"
+        eyebrow=""
         title="Symposium organization"
         description="Travel and venue information for Banja Luka, together with the organising committee and the international scientific committee."
       />
@@ -671,7 +673,9 @@ function OrganizationPage() {
               Organizing committee
             </p>
           </div>
-          <h2 className="mt-3 font-display text-2xl text-foreground md:text-3xl">Hosts from Banja Luka</h2>
+          <h2 className="mt-3 font-display text-2xl text-foreground md:text-3xl">
+            Hosts from Banja Luka
+          </h2>
 
           <ul className="mt-10 grid gap-3 sm:grid-cols-2">
             {organizing.map((p) => (

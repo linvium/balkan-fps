@@ -9,8 +9,7 @@ import heroImg from "@/assets/home-hero-plums.png";
 const btnRegistration =
   "inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-white px-5 py-2.5 text-xs font-semibold text-primary shadow-soft transition hover:bg-white/95";
 
-const HASHTAG_SOCIAL_URL =
-  "https://www.instagram.com/explore/tags/balkanfps2027/";
+const HASHTAG_SOCIAL_URL = "https://www.instagram.com/explore/tags/balkanfps2027/";
 
 const SYMPOSIUM_EMAIL = "balkanfps2027@agro.unibl.org";
 const CHAIR_ADDRESS = "Bulevar vojvode Petra Bojovića 1A, 78000 Banja Luka";
@@ -66,7 +65,8 @@ function HomePage() {
               className="max-w-3xl text-primary-foreground drop-shadow-[0_1px_2px_rgb(0_0_0/0.35)]"
             >
               <span className="inline-flex items-center gap-2 rounded-full border border-accent/45 bg-accent/15 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-accent md:text-sm md:tracking-[0.2em]">
-                <Sparkles className="h-3.5 w-3.5 md:h-4 md:w-4" /> ISHS — Division Temperate Tree Fruits
+                <Sparkles className="h-3.5 w-3.5 md:h-4 md:w-4" /> ISHS — Division Temperate Tree
+                Fruits
               </span>
               <h1 className="mt-5 font-display text-2xl leading-[1.1] text-balance md:mt-6 md:text-3xl lg:text-4xl">
                 VI Balkan Symposium on Fruit Production Systems

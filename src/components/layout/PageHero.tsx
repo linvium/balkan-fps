@@ -30,6 +30,12 @@ export function PageHero({
   const fillShortHero = Boolean(backgroundImage && photoFillSection);
   const useReadingPanel = Boolean(readingPanel && hasPhoto);
 
+  /** Photo heroes (dates, registration, programme, sponsors, organization, …): fit text, max 450px. */
+  const descriptionFit =
+    "inline-block w-fit max-w-[min(100%,450px)] text-sm text-balance md:text-base md:leading-relaxed";
+  const descriptionPhotoPanel =
+    "rounded-2xl border border-white/35 bg-white/40 px-4 py-3 text-foreground backdrop-blur-[2px] md:px-5 md:py-3.5 dark:border-white/10 dark:bg-background/45";
+
   /** Paint photo on the section so overlay gradients that fade to transparent still reveal the image, not the page background. */
   const sectionPhotoStyle =
     fillShortHero && backgroundImage
@@ -110,7 +116,7 @@ export function PageHero({
       <div
         className={cn(
           "relative z-10 mx-auto max-w-5xl px-5 py-20 lg:px-8 lg:py-28",
-          !useReadingPanel && "text-center",
+          !useReadingPanel && "flex flex-col items-center text-center",
         )}
       >
         {useReadingPanel ? (
@@ -157,9 +163,9 @@ export function PageHero({
             {description && (
               <p
                 className={cn(
-                  "mx-auto mt-6 max-w-2xl text-sm text-muted-foreground text-balance md:text-base md:leading-relaxed",
-                  hasPhoto &&
-                    "text-foreground/85 [text-shadow:0_0_20px_rgb(255_255_255/_0.85),0_1px_2px_rgb(255_255_255/_0.9)]",
+                  "mt-6",
+                  descriptionFit,
+                  hasPhoto ? descriptionPhotoPanel : "text-muted-foreground",
                 )}
               >
                 {description}

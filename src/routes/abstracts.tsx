@@ -28,7 +28,7 @@ function AbstractsPage() {
     <>
       <PageHero
         backgroundImage={heroBg}
-        eyebrow="Abstract submission"
+        eyebrow=""
         title="Abstracts and full papers"
         description="All abstracts and manuscripts are submitted in English through the ROSA system."
       >

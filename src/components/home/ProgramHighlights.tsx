@@ -332,14 +332,16 @@ export function ProgramHighlights() {
               iconWrapClassName="bg-amber-600/15 text-amber-900 dark:text-amber-200"
             />
 
-            {/* Row 2 — Day 1 + Day 2 sessions (three cards across) */}
-            <div className="grid gap-6 md:grid-cols-3 md:items-stretch">
-              <WorkHighlightCard
-                card={day1}
-                index={1}
-                className="border-rose-900/12 border-l-rose-600/80 bg-gradient-to-br from-rose-50/45 via-card to-card dark:border-rose-400/22 dark:from-rose-950/28"
-                iconWrapClassName="bg-rose-600/12 text-rose-900 dark:text-rose-200"
-              />
+            {/* Row 2 — Day 1 */}
+            <WorkHighlightCard
+              card={day1}
+              index={1}
+              className="border-rose-900/12 border-l-rose-600/80 bg-gradient-to-br from-rose-50/45 via-card to-card dark:border-rose-400/22 dark:from-rose-950/28"
+              iconWrapClassName="bg-rose-600/12 text-rose-900 dark:text-rose-200"
+            />
+
+            {/* Row 3 — Day 2 sessions (side by side) */}
+            <div className="grid gap-6 md:grid-cols-2 md:items-stretch">
               <WorkHighlightCard
                 card={day2a}
                 index={2}
@@ -354,7 +356,7 @@ export function ProgramHighlights() {
               />
             </div>
 
-            {/* Row 3 — Day 3 | Day 3 */}
+            {/* Row 4 — Day 3 | Day 3 */}
             <div className="grid gap-6 md:grid-cols-2">
               <WorkHighlightCard
                 card={day3a}
@@ -370,7 +372,7 @@ export function ProgramHighlights() {
               />
             </div>
 
-            {/* Row 4 — Technical tour */}
+            {/* Row 5 — Technical tour */}
             <WorkHighlightCard
               card={technicalTour}
               index={6}
