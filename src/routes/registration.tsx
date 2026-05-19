@@ -237,13 +237,13 @@ function RegistrationPage() {
                     ) : (
                       <>
                         <Row
-                          label="Early bird (until 31 Dec 2026)"
+                          label="Early bird (until 01 March 2027)"
                           value={t.early}
                           big
                           priceClassName={v.price}
                         />
                         <Row
-                          label="Late (from 1 Jan 2027)"
+                          label="Late (from 01 March 2027)"
                           value={t.late}
                           priceClassName={v.price}
                         />
