@@ -141,7 +141,7 @@ export function OrganizersPatronsStrip() {
               <img
                 src={ishsLogo}
                 alt=""
-                className="h-14 w-auto max-w-[10rem] object-contain sm:h-16 sm:max-w-[11rem]"
+                className="h-16 w-auto max-w-[11rem] object-contain sm:h-[4.75rem] sm:max-w-[13rem]"
                 loading="lazy"
               />
             </a>

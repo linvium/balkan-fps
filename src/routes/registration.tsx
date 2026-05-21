@@ -236,14 +236,32 @@ function RegistrationPage() {
                     )}
                     aria-hidden
                   />
-                  <h3
-                    className={cn(
-                      "relative font-display text-2xl font-semibold tracking-tight",
-                      v.title,
-                    )}
-                  >
-                    {t.name}
-                  </h3>
+                  {t.name === "ISHS members" ? (
+                    <h3
+                      className={cn(
+                        "relative font-display text-2xl font-semibold tracking-tight",
+                        v.title,
+                      )}
+                    >
+                      <a
+                        href="https://ishs.org/members/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline-offset-4 transition hover:underline"
+                      >
+                        {t.name}
+                      </a>
+                    </h3>
+                  ) : (
+                    <h3
+                      className={cn(
+                        "relative font-display text-2xl font-semibold tracking-tight",
+                        v.title,
+                      )}
+                    >
+                      {t.name}
+                    </h3>
+                  )}
                   <p className="relative mt-2 text-sm leading-relaxed text-muted-foreground">
                     {t.desc}
                   </p>
