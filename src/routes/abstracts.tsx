@@ -76,6 +76,15 @@ function AbstractsPage() {
               >
                 Author guidelines
               </a>
+              <a
+                href="https://ishs.org/rosa_manual_authors/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-medium text-foreground hover:bg-secondary"
+              >
+                <FileText className="h-4 w-4" /> ROSA user manual (authors)
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
             </div>
           </TabsContent>
 
@@ -178,7 +187,8 @@ function AbstractsPage() {
                 "The abstract must be submitted by the presenting author from their own account. Submission from another person’s account is not allowed.",
                 "Authors must register for the symposium; otherwise the abstract and paper may be withdrawn from the programme and the Acta Horticulturae proceedings.",
                 "Failure to present (orally or as poster) may result in withdrawal from the proceedings.",
-                "All oral presenters must submit a manuscript for publication; otherwise their presentation may be cancelled.",
+                "All oral presenters must submit a manuscript for publication in the Acta Horticulturae proceedings; otherwise their presentation may be cancelled.",
+                "Authors of posters are strongly encouraged to prepare and submit a manuscript for Acta Horticulturae.",
               ].map((rule) => (
                 <li
                   key={rule}

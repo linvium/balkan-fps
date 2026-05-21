@@ -13,8 +13,16 @@ export function SiteFooter() {
               31 August – 3 September 2027 · Banja Luka, Bosnia and Herzegovina
             </p>
             <p className="mt-6 text-sm text-primary-foreground/70">
-              Supported by <span className="font-medium text-accent">ISHS</span> – Division
-              Temperate Tree Fruits.
+              Under the aegis of{" "}
+              <a
+                href="https://ishs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-accent underline-offset-4 hover:underline"
+              >
+                ISHS
+              </a>{" "}
+              – Division Temperate Tree Fruits.
             </p>
             <p className="mt-2 inline-block rounded-full bg-accent/15 px-3 py-1.5 text-sm font-medium text-accent">
               #BalkanFPS2027

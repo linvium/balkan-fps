@@ -29,24 +29,30 @@ export function SiteHeader() {
     <>
       {/* Not wrapped in <header>: sticky nav breaks inside a flex-item wrapper in column layouts */}
       <div role="banner" className="bg-white">
-        <div className="mx-auto max-w-7xl bg-white">
+        <div className="relative mx-auto max-w-7xl bg-white">
+          <img
+            src={headerBanner}
+            alt="VI Balkan Symposium on Fruit Production Systems — 31 Aug – 3 Sep 2027 — Banja Luka, Bosnia and Herzegovina — ISHS"
+            className="h-auto w-full bg-white object-contain object-center"
+            width={1600}
+            height={200}
+            sizes="100vw"
+            decoding="async"
+            fetchPriority="high"
+          />
           <Link
             to="/"
-            className="block bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            className="absolute inset-y-0 left-0 right-[22%] z-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
             aria-label={headerAriaLabel}
             onClick={() => setOpen(false)}
-          >
-            <img
-              src={headerBanner}
-              alt="VI Balkan Symposium on Fruit Production Systems — 31 Aug – 3 Sep 2027 — Banja Luka, Bosnia and Herzegovina — ISHS"
-              className="h-auto w-full bg-white object-contain object-center"
-              width={1600}
-              height={200}
-              sizes="100vw"
-              decoding="async"
-              fetchPriority="high"
-            />
-          </Link>
+          />
+          <a
+            href="https://ishs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-y-0 right-0 z-10 w-[22%] min-w-[4.5rem] max-w-[12rem] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
+            aria-label="International Society for Horticultural Science (ISHS)"
+          />
         </div>
       </div>
 

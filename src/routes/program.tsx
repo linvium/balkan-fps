@@ -107,6 +107,11 @@ const days: Day[] = [
         title: "Session 4 — Fruit quality",
         desc: "KNS, oral and poster presentations",
       },
+      {
+        time: "16:30 – 17:30",
+        title: "ISHS Business meeting",
+        desc: "During the ISHS Business meeting, the decision on the next Balkan Symposium on Fruit Production Systems will be made.",
+      },
       { time: "19:30 – 23:30", title: "Gala dinner", highlight: true },
     ],
   },

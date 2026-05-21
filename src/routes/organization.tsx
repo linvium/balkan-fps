@@ -714,6 +714,9 @@ function OrganizationPage() {
         <div className="mx-auto max-w-5xl px-5 lg:px-8">
           <div className="flex items-center gap-3">
             <Microscope className="h-5 w-5 text-primary" aria-hidden />
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+              Scientific Committee
+            </p>
           </div>
           <h2 className="mt-3 font-display text-2xl text-foreground md:text-3xl">
             A global scientific network

@@ -53,7 +53,7 @@ const milestonesRaw: Milestone[] = [
     category: "event",
   },
   {
-    title: "Abstract submission",
+    title: "Abstract submission open",
     sortDate: "2026-09-20",
     dateDisplay: "September 20, 2026",
     year: 2026,

@@ -198,6 +198,23 @@ function RegistrationPage() {
 
       <RegistrationSubnav />
 
+      <section className="border-b border-border/60 bg-secondary/30 py-10 md:py-12">
+        <div className="mx-auto max-w-3xl px-5 text-center lg:px-8">
+          <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
+            Reduced registration fees apply to individual members of the{" "}
+            <a
+              href="https://ishs.org/members/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-primary underline-offset-4 hover:underline"
+            >
+              International Society for Horticultural Science (ISHS)
+            </a>
+            . Membership information and benefits are available on the ISHS website.
+          </p>
+        </div>
+      </section>
+
       <section id="registration-fees" className="scroll-mt-28 bg-background py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">

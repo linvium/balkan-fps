@@ -64,10 +64,33 @@ function HomePage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="max-w-3xl text-primary-foreground drop-shadow-[0_1px_2px_rgb(0_0_0/0.35)]"
             >
-              <span className="inline-flex items-center gap-2 rounded-full border border-accent/45 bg-accent/15 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-accent md:text-sm md:tracking-[0.2em]">
-                <Sparkles className="h-3.5 w-3.5 md:h-4 md:w-4" /> ISHS — Division Temperate Tree
-                Fruits
-              </span>
+              <div className="inline-flex flex-col items-start gap-1.5 rounded-2xl border border-accent/45 bg-accent/15 px-4 py-2.5 text-left md:px-5 md:py-3">
+                <p className="text-[0.65rem] font-medium uppercase tracking-[0.2em] text-primary-foreground/85 md:text-xs md:tracking-[0.22em]">
+                  Under the aegis of
+                </p>
+                <p className="inline-flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs font-medium uppercase tracking-[0.14em] text-accent md:text-sm md:tracking-[0.18em]">
+                  <Sparkles className="h-3.5 w-3.5 shrink-0 md:h-4 md:w-4" aria-hidden />
+                  <a
+                    href="https://ishs.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline-offset-4 hover:underline"
+                  >
+                    ISHS
+                  </a>
+                  <span className="text-primary-foreground/50" aria-hidden>
+                    —
+                  </span>
+                  <a
+                    href="https://ishs.org/scientific-structure/dfru-temperate-tree-fruits/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline-offset-4 hover:underline"
+                  >
+                    Division Temperate Tree Fruits
+                  </a>
+                </p>
+              </div>
               <h1 className="mt-5 font-display text-2xl leading-[1.1] text-balance md:mt-6 md:text-3xl lg:text-4xl">
                 VI Balkan Symposium on Fruit Production Systems
               </h1>
